@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navcontact {
+  background-color: #ebebea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #ebebea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.navcontact_contact {
+  display: flex;
+  gap: 50px;
+  padding: 15px;
+}
+
+.navbar {
+  border: black;
+}
+
+.navbar_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  color: blue;
+}
+
+.icons {
+  padding-right: 5px;
+}
+
+.navcontact_text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navbar_ul {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  color: grey;
+}
+
+.myaccountBtn {
+  margin-left: 180px;
+  color: #fff;
+  background-color: #3262bb;
+  padding: 15px;
+  border-radius: 9999px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Home */
+.home_main {
+  background-color: #dce2df;
+  height: 100vh;
+}
+
+.home_section{
+   margin-left: 500px;
+   margin-right: 500px;
+   padding: 100px;
+}
+
+.home_section , .head {
+   display: flex;
+   gap: 4px;
+}

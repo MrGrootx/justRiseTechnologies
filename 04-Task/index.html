@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 04</title>
+  </head>
+  <style>
+    .mainLayout {
+      background-color: cadetblue;
+      display: flex;
+      justify-content: center;
+      padding: 25px;
+    }
+    .tablemain {
+      background-color: cadetblue;
+
+      padding: 25px;
+      margin-top: 15px;
+    }
+    .tableCreate {
+      display: flex;
+      justify-content: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 2px solid #000;
+    }
+
+    th,
+    td {
+      border: 2px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      color: red;
+    }
+  </style>
+  <body style="background-color: rgb(59, 58, 58); color: white">
+    <h1>Task 4</h1>
+    <div class="mainLayout">
+      <form class="form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name</label>
+          <input type="text" placeholder="Enter your Name" />
+
+          <br /><br />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your Email" />
+          <br /><br />
+
+          <label for="">Gender</label>
+          <select>
+            <option value="Select">Select</option>
+            <option value="Select">Male</option>
+            <option value="Select">Female</option>
+          </select>
+          <br />
+          <br />
+          <label for="bio">Bio:</label><br />
+          <textarea id="bio" name="bio" rows="4" cols="50" required></textarea
+          ><br /><br />
+
+          <label for="subscription">
+            <input type="radio" />
+            Free subscription
+          </label>
+          <label for="subscription">
+            <input type="radio" />
+            Premium subscription </label
+          ><br />
+
+          <label for="terms">
+            <input type="checkbox" name="" id="" />
+            I accept the terms
+          </label>
+          <br />
+
+          <br /><br />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="tablemain">
+      <h1>Tables</h1>
+      <div class="tableCreate">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+
+          <tr>
+            <td>Groot</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>Abishek</td>
+            <td>19</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

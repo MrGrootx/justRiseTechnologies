@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      row-gap: 20px;
+      margin: 5px;
+    }
+
+    .gradient1 {
+      background-image: linear-gradient(#ff8a08, #ffc100);
+      padding: 20px;
+      height: 100px;
+    }
+    .gradient2 {
+      background-image: linear-gradient(to bottom right, #074173, #1679ab);
+      padding: 20px;
+      height: 100px;
+    }
+    .gradient3 {
+      background-image: linear-gradient(#35374b, #78a083, #50727b);
+      padding: 20px;
+      height: 100px;
+    }
+    .gradient4 {
+      background-image: linear-gradient(
+        to right,
+        #b3c8cf,
+        #bed7dc,
+        #f1eedc,
+        #e5ddc5,
+        #a79277,
+        #d1bb9e,
+        #EAD8C0
+      );
+      padding: 20px;
+      height: 100px;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="gradient1">Gradient 1</div>
+      <div class="gradient2">Gradient 2</div>
+      <div class="gradient3">Gradient 3</div>
+      <div class="gradient4">Gradient 4</div>
+    </div>
+  </body>
+</html>

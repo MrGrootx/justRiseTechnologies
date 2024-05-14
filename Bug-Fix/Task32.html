@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .el {
+            position: relative;
+            animation-name: go;
+            animation-iteration-count: infinite;
+            width: 40px;
+            height: 40px;
+            animation-duration: 1s;
+            gap: 20px;
+            border-radius: 100px;
+        }
+
+        @for $i from 1 through 8 {
+            .el:nth-child(#{$i}) {
+                animation-delay: $i * 0.1s;
+                background-color: #4BD5D5;
+                top: ($i - 1) * 60px;
+                left: ($i - 1) * 0px;
+            }
+        }
+
+        @keyframes go {
+            100% {
+                transform:
+                    translate(60px, 40px) scale(1.5);
+                background-color: #4BD566;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animationWrap" style="height: 500px; width: 100px" ;>
+        <div class="el"></div>
+        <div class="el"></div>
+        <div class="el"></div>
+        <div class="el"></div>
+        <div class="el"></div>
+        <div class="el"></div>
+        <div class="el"></div>
+        <div class="el"></div>
+    </div>
+
+</body>
+
+</html>

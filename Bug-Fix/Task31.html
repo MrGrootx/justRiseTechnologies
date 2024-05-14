@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bug Fix 01</title>
+    <style>
+      .animation-wrapper {
+        position: relative; /* Added relative */
+      }
+      .circle {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: aqua;
+        animation: movecircle 1s infinite;
+        /**transform-origin:center  center ; */
+      }
+     /** @for $num from 1 through 8 {
+        .circle:nth-child(#{$num}) {
+          left: ($num - 1) * 30px;
+          animation-delay: $num * 0.1s;
+        }
+      }
+      */
+
+      /* We haven't installed Sass as an npm package, so it's not working i believe. */
+
+      .circle:nth-child(1) {
+        left: 0;
+        animation-delay: 0.1s;
+      }
+      .circle:nth-child(2) {
+        left: 30px;
+        animation-delay: 0.2s;
+      }
+      
+      @keyframes movecircle {
+        0% {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+          background-color: aqua;
+        }
+        50% {
+          transform: translate(0, 50px) scale(0.4); /* Changed  scale(.4) ->  scale(0.4)  */
+          opacity: 0.5;
+          background-color: pink;
+        }
+        100% {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation-wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>

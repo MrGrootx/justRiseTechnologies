@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+        grid-template-columns: auto auto auto auto; /* Changed */
+        align-items: center;
+        justify-content: center; /* Added */
+        gap: 10px;
+      }
+      .grid > article {
+        border: 1px solid #7e1818;
+        box-shadow: 2px 2px 6px 0px 5 rgba((0), 0, 0, 0.3);
+      }
+      .text {
+        padding: 0 20px 20px;
+      }
+      .grid > article img {
+        max-width: 100%;
+      }
+      .text > button {
+        background: gray;
+        border: 0;
+        color: rgb(57, 7, 185);
+        padding: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- What i changed here  wrap every articles in to main element -->
+    <main class="grid">
+      <article>
+        <img
+          src="https://justrise.in/wp-content/uploads/2020/10/Logo-02-2.png"
+          alt="sample photo"
+        />
+        <div class="text">
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            culpa. Minima perferendis aliquid laborum facere nam dolor eos
+            aperiam consequatur. Ipsum nesciunt tempore doloremque ducimus!
+            Molestias laboriosam at exercitationem adipisci.
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a
+            minus earum nemo eveniet suscipit repellendus et, porro molestias
+            at, recusandae illum ullam distinctio provident ipsam unde. Maiores,
+            blanditiis sequi?
+          </p>
+          <button>Here's why</button>
+        </div>
+      </article>
+
+      <article>
+        <img
+          src="https://justrise.in/wp-content/uploads/2020/10/Logo-02-2.png"
+          alt="sample photo"
+        />
+        <div class="text">
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis, doloribus earum quidem provident sed tempore recusandae
+            quae totam enim voluptates commodi unde, nulla, ullam delectus iure
+            sapiente. At, beatae accusamus.
+          </h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum optio
+            voluptatum tempore eaque expedita odio fugiat maxime id, aliquam
+            quibusdam eos perspiciatis ipsa asperiores explicabo, quas sed
+            aperiam cumque suscipit!
+          </p>
+          <button>Here's why</button>
+        </div>
+      </article>
+
+      <article>
+        <img
+          src="https://justrise.in/wp-content/uploads/2020/10/Logo-02-2.png"
+        />
+        <div class="text">
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            molestiae quisquam doloremque voluptas obcaecati illo quae eum eaque
+            cum ipsam consequatur cumque corrupti tempora ipsa, a, sed porro
+            possimus eligendi?
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum totam
+            illo debitis iure corporis eligendi, officia quod commodi facilis
+            quam, animi praesentium dolor. Repellendus ducimus, quo illum
+            ratione impedit eos!
+          </p>
+          <button>Here's why</button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Sign In</title>
+    <title>Dashboard | Sign UP</title>
 
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
@@ -17,9 +17,9 @@
           Just Rise
         </h1>
         <p class="font-semibold text-gray-400 mt-4 text-center">
-          Please sign in to your account and continue to dashboard
+          Please sign up to create your account
         </p>
-        <form autocomplete="off" action="dashboard.html">
+        <form autocomplete="off">
           <div class="mt-4">
             <label for="" class="text-gray-500 font-semibold">Email Address</label>
             <input
@@ -39,21 +39,30 @@
               required
             />
           </div>
+          <div class="mt-4">
+            <label for="" class="text-gray-500 font-semibold">Confirm Password</label>
+            <input
+              type="password"
+              placeholder="********"
+              class="border w-full p-3 rounded-lg outline-none border-gray-200 mt-2"
+              required
+            />
+          </div>
           <h3 class="mt-5 text-sm text-gray-400">
-            Don't have an account?<a
-              href="signup.html"
+            Already have an account?<a
+              href="index.html"
               class="text-blue-600 underline ml-3"
-              >Sign Up</a
+              >Sign In</a
             >
           </h3>
           <div class="md:flex items-center md:justify-between">
             <button
               class="bg-blue-600 text-white rounded font-semibold px-5 py-2 mt-4 w-full md:w-[300px]"
             >
-              Sign In
+              Sign Up
             </button>
-            <h4 class="text-blue-500 underline cursor-pointer mt-2 md:mt-0">
-              Forget Password?
+            <h4 class="text-blue-500 cursor-pointer mt-2 md:mt-0">
+             Generate Safe Password
             </h4>
           </div>
         </form>

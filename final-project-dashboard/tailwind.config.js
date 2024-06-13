@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         Roboto: ["Roboto Mono", "monospace"],
         Rubik: ["Rubik", "sans-serif"],
+        RobotoCondensed: ["Roboto Condensed", "sans-serif"],
       },
     },
   },

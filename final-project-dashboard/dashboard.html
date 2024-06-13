@@ -105,71 +105,138 @@
         </div>
         <div class="border border-[#d3d9e8ff] mt-5 mb-5"></div>
 
-        <div class="grid grid-cols-3 gap-x-5">
+        <div class="border p-4 h-[660px] overflow-y-scroll">
+          <div class="grid grid-cols-3 gap-x-5 mb-4">
 
-          <div class="bg-white p-5 border flex items-center rounded-lg shadow">
-            <div class="bg-[#dceffc] px-5 py-3 rounded">
-              <i class="fa-solid fa-dollar-sign text-[#4373ccff] text-xl"></i>
-            </div>
-            <div class="w-full ml-3">
-              <div class="flex justify-between w-full items-center">
-                <div>
-                  <h3 class="uppercase font-bold text-[#aeb1bd] text-xs">Today's sales</h3>
+            <div class="bg-white p-5 border flex items-center rounded-lg shadow">
+              <div class="bg-[#dceffc] px-5 py-3 rounded">
+                <i class="fa-solid fa-dollar-sign text-[#4373ccff] text-xl"></i>
+              </div>
+              <div class="w-full ml-3">
+                <div class="flex justify-between w-full items-center">
+                  <div>
+                    <h3 class="uppercase font-bold text-[#aeb1bd] text-xs">Today's sales</h3>
+                  </div>
+                  <div>
+                    <div class="bg-[#fae3e6] px-3 py-1 flex items-center gap-x-1 rounded">
+                      <i class="fa-solid fa-chevron-down text-[#ed2828] font-bold"></i>
+                      <h5 class="text-[#ed2828] font-bold">4%</h5>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <div class="bg-[#fae3e6] px-3 py-1 flex items-center gap-x-1 rounded">
-                    <i class="fa-solid fa-chevron-down text-[#ed2828] font-bold"></i>
-                    <h5 class="text-[#ed2828] font-bold">4%</h5>
+                <h2 class="font-bold text-xl font-RobotoCondensed">$ 38,211</h2>
+                <h6 class="text-[11px] text-[#c3c5d4] font-semibold mt-1">471 Orders Total</h6>
+              </div>
+            </div>
+  
+            <div class="bg-white p-5 border flex items-center rounded-lg shadow">
+              <div class="bg-[#fff3e3] px-5 py-3 rounded">
+                <i class="fa-solid fa-user text-[#f29d3d] text-xl"></i>
+              </div>
+              <div class="w-full ml-3">
+                <div class="flex justify-between w-full items-center">
+                  <div>
+                    <h3 class="uppercase font-bold text-[#aeb1bd] text-xs">Active users</h3>
+                  </div>
+                  <div>
+                    <div class="bg-[#d5f5e2] px-3 py-1 flex items-center gap-x-1 rounded">
+                      <i class="fa-solid fa-chevron-down text-[#26d06a] font-bold"></i>
+                      <h5 class="text-[#26d06a] font-bold">12%</h5>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="font-bold text-xl font-RobotoCondensed">$ 23,481</h2>
+                <h6 class="text-[11px] text-[#c3c5d4] font-semibold mt-1">790 unique this month</h6>
+              </div>
+            </div>
+  
+            <div class="bg-white p-5 border flex items-center rounded-lg shadow">
+              <div class="bg-[#fce3e6] px-5 py-3 rounded">
+                <i class="fa-solid fa-download text-[#fa485d] text-xl"></i>
+              </div>
+              <div class="w-full ml-3">
+                <div class="flex justify-between w-full items-center">
+                  <div>
+                    <h3 class="uppercase font-bold text-[#aeb1bd] text-xs">Downloads</h3>
+                  </div>
+                  <div>
+                    <div class="bg-[#d5f5e2] px-3 py-1 flex items-center gap-x-1 rounded">
+                      <i class="fa-solid fa-chevron-down text-[#26d06a] font-bold"></i>
+                      <h5 class="text-[#26d06a] font-bold">7%</h5>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="font-bold text-xl font-RobotoCondensed">$ 23,481</h2>
+                <h6 class="text-[11px] text-[#c3c5d4] font-semibold mt-1">790 unique this month</h6>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="grid grid-cols-3 gap-x-3">
+
+            <div class="bg-white shadow p-5 rounded-lg">
+              <div class=" flex justify-between">
+                <span class="text-[#4c4052] font-bold">Active Tasks</span>
+                <div class="p-1 bg-[#e8fff2] text-xs rounded px-2">
+                  <span class="font-bold text-[#7db084]">14 Completed</span>
+                </div>
+              </div>
+              
+              <h6 class="text-[#acb6c2] text-xs mt-1">Showing 5 out of 23 active tasks.</h6>
+
+              <div class="mt-4">
+                
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#e3fcef] px-3 py-2 rounded">
+                    <i class="fa-regular fa-newspaper text-[#6ca660]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">Dashboard UI optimizations</span>
+                    <h5 class="text-gray-400 text-xs">Oskar Hudson</h5>
+                  </div>
+                </div>
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#def1ff] px-3 py-2 rounded">
+                    <i class="fa-solid fa-shield-halved  text-[#327cdb]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">Mailbox cleanup</span>
+                    <h5 class="text-gray-400 text-xs">Woodrow Hawkins</h5>
+                  </div>
+                </div>
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#e4e3ff] px-3 py-2 rounded">
+                    <i class="fa-regular fa-clock text-[#818be3]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">Header scroll bugfix</span>
+                    <h5 class="text-gray-400 text-xs">Sky Meyers</h5>
+                  </div>
+                </div>
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#fcf5e1] px-3 py-2 rounded">
+                    <i class="fa-solid fa-earth-europe text-[#eb9850]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">Localizations for file manager</span>
+                    <h5 class="text-gray-400 text-xs">Oskar Hudson</h5>
+                  </div>
+                </div>
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#fce3e6] px-3 py-2 rounded">
+                    <i class="fa-solid fa-earth-europe text-[#f04861]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">New E-Commerce UX/UI design</span>
+                    <h5 class="text-gray-400 text-xs">Oskar Hudson</h5>
                   </div>
                 </div>
               </div>
-              <h2 class="font-bold text-xl font-RobotoCondensed">$ 38,211</h2>
-              <h6 class="text-[11px] text-[#c3c5d4] font-semibold mt-1">471 Orders Total</h6>
-            </div>
-          </div>
 
-          <div class="bg-white p-5 border flex items-center rounded-lg shadow">
-            <div class="bg-[#fff3e3] px-5 py-3 rounded">
-              <i class="fa-solid fa-user text-[#f29d3d] text-xl"></i>
             </div>
-            <div class="w-full ml-3">
-              <div class="flex justify-between w-full items-center">
-                <div>
-                  <h3 class="uppercase font-bold text-[#aeb1bd] text-xs">Active users</h3>
-                </div>
-                <div>
-                  <div class="bg-[#d5f5e2] px-3 py-1 flex items-center gap-x-1 rounded">
-                    <i class="fa-solid fa-chevron-down text-[#26d06a] font-bold"></i>
-                    <h5 class="text-[#26d06a] font-bold">12%</h5>
-                  </div>
-                </div>
-              </div>
-              <h2 class="font-bold text-xl font-RobotoCondensed">$ 23,481</h2>
-              <h6 class="text-[11px] text-[#c3c5d4] font-semibold mt-1">790 unique this month</h6>
-            </div>
+            
           </div>
-
-          <div class="bg-white p-5 border flex items-center rounded-lg shadow">
-            <div class="bg-[#fce3e6] px-5 py-3 rounded">
-              <i class="fa-solid fa-download text-[#fa485d] text-xl"></i>
-            </div>
-            <div class="w-full ml-3">
-              <div class="flex justify-between w-full items-center">
-                <div>
-                  <h3 class="uppercase font-bold text-[#aeb1bd] text-xs">Downloads</h3>
-                </div>
-                <div>
-                  <div class="bg-[#d5f5e2] px-3 py-1 flex items-center gap-x-1 rounded">
-                    <i class="fa-solid fa-chevron-down text-[#26d06a] font-bold"></i>
-                    <h5 class="text-[#26d06a] font-bold">7%</h5>
-                  </div>
-                </div>
-              </div>
-              <h2 class="font-bold text-xl font-RobotoCondensed">$ 23,481</h2>
-              <h6 class="text-[11px] text-[#c3c5d4] font-semibold mt-1">790 unique this month</h6>
-            </div>
-          </div>
-          
         </div>
 
      </section>

@@ -11,7 +11,7 @@
   <body class="lg:h-screen font-Roboto bg-[#e9ecf7ff]">
     <main class="lg:flex gap-x-3 p-2 h-full">
       <!-- sidebar -->
-      <section class="lg:w-[350px] p-3 shadow h-full bg-[#ffffffff]">
+      <section class="lg:w-[350px] p-3 shadow h-full bg-[#ffffffff] mb-3 lg:mb-0">
         <div class="bg-gray-50 py-11 px-1">
           <div class="flex justify-between items-center">
             <div>
@@ -79,34 +79,36 @@
       </section>
       <!-- navbar -->
       <section class="border border-red-500 w-full h-full">
-        <div class=" px-6 py-5 bg-[#ffffffff] m-5  rounded-lg shadow-md flex justify-between items-center">
+        <div class=" px-6 py-5 bg-[#ffffffff] md:m-5 mt-3 md:mt-0  rounded-lg shadow-md flex justify-between items-center">
           <div class="flex gap-x-6 text-xl">
             <div><i class="fa-solid fa-chevron-left text-[#858585ff] mr-2"></i></div>
             <div><i class="fa-solid fa-plus text-[#858585ff] mr-2"></i></i></div>
             <div><i class="fa-solid fa-location-arrow text-[#858585ff] mr-2"></i></div>
           </div>
           <div>
-            <ul class="flex items-center gap-x-5 cursor-pointer">
-              <li class="text-[#6d7073ff]">Applications</li>
-              <li class="text-[#bababaff] hover:text-[#6d7073ff]">Reports</li>
-              <li class="text-[#bababaff] hover:text-[#6d7073ff]">Projects</li>
-              <li><i class="fa-solid fa-magnifying-glass text-[#919191ff]"></i></li>
-              <div>
-                <img src="./assets/img/dash/icons8-us-96.png" class="w-12 h-12 " alt="us">
-              </div>
-            </ul>
+            <div class="">
+              <ul class="flex items-center gap-x-5 cursor-pointer">
+                <li class="text-[#6d7073ff] ">Applications</li>
+                <li class="text-[#bababaff] hover:text-[#6d7073ff] hidden lg:block">Reports</li>
+                <li class="text-[#bababaff] hover:text-[#6d7073ff] hidden lg:block">Projects</li>
+                <li><i class="fa-solid fa-magnifying-glass text-[#919191ff] hidden lg:block"></i></li>
+                <div>
+                  <img src="./assets/img/dash/icons8-us-96.png" class="w-12 h-12 " alt="us">
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
         
       <!-- main content -->
-       <section class="p-9">
+       <section class="xl:p-9">
         <div>
-          <h1 class="font-RobotoCondensed font-bold text-3xl">Dashboard</h1>
+          <h1 class="font-RobotoCondensed font-bold text-3xl mt-3 md:mt">Dashboard</h1>
         </div>
         <div class="border border-[#d3d9e8ff] mt-5 mb-5"></div>
 
-        <div class="border p-4 h-[660px] overflow-y-scroll">
-          <div class="grid grid-cols-3 gap-x-5 mb-4">
+        <div class=" p-4 h-[660px] overflow-y-scroll">
+          <div class="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-5 mb-4">
 
             <div class="bg-white p-5 border flex items-center rounded-lg shadow">
               <div class="bg-[#dceffc] px-5 py-3 rounded">
@@ -173,7 +175,7 @@
             
           </div>
 
-          <div class="grid grid-cols-3 gap-x-3">
+          <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-x-3 gap-y-3">
 
             <div class="bg-white shadow p-5 rounded-lg">
               <div class=" flex justify-between">

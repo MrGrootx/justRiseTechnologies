@@ -34,6 +34,6 @@
 
 /* Customize the thumb of the scrollbar */
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: #6f8dc7ff;
   border-radius: 10px;
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" crossorigin src="/agent-registration/assets/index-DQN0b3r7.js"></script>
+    <link rel="stylesheet" crossorigin href="/agent-registration/assets/index-DaY1K2Ow.css">
+  </head>
+  <body class="font-Roboto">
+    <!-- LOGIN -->
+    <section
+      class="flex justify-center items-center mt-auto h-screen p-3 lg:p-0"
+    >
+      <div class="shadow-gray-100 shadow bg-gray-50 w-[800px] p-5">
+        <h1 class="font-bold text-2xl font-Rubik text-gray-600 text-center">
+          Just Rise
+        </h1>
+        <p class="font-semibold text-gray-400 mt-4 text-center">
+          Please sign in to your account and continue to dashboard
+        </p>
+        <form autocomplete="off" action="dashboard.html">
+          <div class="mt-4">
+            <label for="" class="text-gray-500 font-semibold">Email Address</label>
+            <input
+              type="text"
+              placeholder="info@justrise.in"
+              class="border w-full p-3 mt-2 rounded-lg outline-none border-gray-200"
+              required
+            />
+          </div>
+
+          <div class="mt-4">
+            <label for="" class="text-gray-500 font-semibold">Password</label>
+            <input
+              type="password"
+              placeholder="********"
+              class="border w-full p-3 rounded-lg outline-none border-gray-200 mt-2"
+              required
+            />
+          </div>
+          <h3 class="mt-5 text-sm text-gray-400">
+            Don't have an account?<a
+              href="signup.html"
+              class="text-blue-600 underline ml-3"
+              >Sign Up</a
+            >
+          </h3>
+          <div class="md:flex items-center md:justify-between">
+            <button
+              class="bg-blue-600 text-white rounded font-semibold px-5 py-2 mt-4 w-full md:w-[300px]"
+            >
+              Sign In
+            </button>
+            <h4 class="text-blue-500 underline cursor-pointer mt-2 md:mt-0">
+              Forget Password?
+            </h4>
+          </div>
+        </form>
+        <div class="border border-gray-200 mt-6"></div>
+        <div class="flex gap-x-4 mt-3 justify-center">
+          <img
+            src="data:image/png;base64,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"
+            class="w-10 h-10 grayscale hover:grayscale-0 cursor-pointer"
+            alt="google-icon"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE1klEQVR4nO2Z609bZRzHT7ht64DJdWNlzA7GWoyvjIv+FZqomZkvJJkvfa8hjsNt0DEqQ2DQcqczJijgBXDqFuOyxPhCsxBMHPSyXg6l7WnP6SnQnkL5maeoYeG05zx9oGrCN/m9/3xPn9/v+T3fUtSRjnQkck1BtnYi9OqlcaGhdjw0XTvO/35xNBSsGeNi1aNcrHqED2qGuSXNcHBaYwo2nDexr1A0ZFH/tl74bPOczhzWaycF96UJAVDVjofg4hgqHmpGeage4eHCMJcozVAQnjehCsD5wYCraoDtUJvYyoyD10wJZTpz2KidFETtZBiw4Y0BqBpkE1V5xy9W3vENVBiZ0ozA190NX9VOrgd05jCQwp8bSBhIlLrfx57t9b19aOAvGSG37m54SGdeh0OAh7N9qLxQ0esdpIyQe9DwqjpzeCED8HDmEy+U96zNVxgZ1UHB52YS/nTPWqLKbq/+QNFLecQGMnRsYC98+W0PlHV7oLSbGSCD/zT8Dim8xsjCtXsCjC5G4IFDhF/XtuBnJgYPnSLMWaLw0UNBEr6sexVKP16Foi73lbTgtROhEt3kup8E/rVZHmz8NqTSI5eYFL7EwEBJFxPI70pjxKI5TwL/+iwP4vZOSvi9BiThDQwUdzFQ1Onqx4J/0bxRSXJJXTCx4BLioESPXGJq+FtuVGKRnqnC+fp6koZ9/35YEfzfBmTg4blOF5y66exQRk9DlnZCcJFMm+knUZCSI7QNb85wUDvo260BL2j61xTAu6BQ73CjpVGWP7FVEo7K5aB0474xw6VuWIM0/KmbTijUJ+qyrAG0EpPO+WBkf/N61uNwhgC+oMMB+XrHh/IGJkIzpJfUlkT//rIaI4Iv6HDAyXbH57IGasf4JdIbNi4xPe/bo0Tw+e0OUN2wL8oaqBkLBUjXAykD39uiRPAnbzyFE212v7yBUU4k3W2SG0gfXtX2FFSt9qisgeoRTsSBRxcWH915pqQUiwNwkfi+Mv22rgy+zQ4nWpQZCOB8eUGUXxdSqeknXhl8qx2OtdjkjxBKD3CODamBqzOsIvjjLTY43myTb2LNUHAG58yTGrg87FEG32KDY802+TGKchuchg0RGNiKA5TecimFh7wmyweyBlDohPOSqp/j4b2Fv2qeg2tzHEhZerwWg/qvA1D/FQvvfrlbV77wY8BbIafZ+rKiZa7KyDrTfQaiUSk1Rr+zRpRPm9b98LlNVofiNA8lZunCozmfzEC68HnIAG1pp5QKxX27iRk+PLqgpAzcs0RI4KNUwxM1hSMU96UDn9zAZrrwkN1o6cWCTxgY4ovVfT4/LjxaD5IZSAc+p9HCUvQf6eWmKKvEhUd7TSoDmPCQ3bjyFkUilFXiwKcygA1/fbmPItYUZJ/u8cziPEYkDaxsYsHnNK7MUfSPOeQG0K9gZFTl3Z55pfu8lIFvVzaVw19f+YaiDyjc/UdGyEVZpZJ9PrkBhceGPqAvLyWUVZYY3P5Uj5FkBmTgfcQNq1QF7e4SFPcVdbqjUutBMgPJLqlsNOfppWIq0yo2ONUoMSvUO5x7LykpAwvLG8/uNrTVmVgPcG/YQxENWSh0QrkNij4WveKGi4/FN2I7sLm1A0xoK25+LLBon0crcWKr/C/8zXqkI1H/f/0JPDNnaCVeJTwAAAAASUVORK5CYII="
+            class="w-10 h-10 grayscale hover:grayscale-0 cursor-pointer"
+            alt="facebook-icon"
+          />
+          <img
+            src="data:image/png;base64,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"
+            class="w-10 h-10 grayscale hover:grayscale-0 cursor-pointer"
+            alt="x-icon"
+          />
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

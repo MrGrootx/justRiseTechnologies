@@ -7,6 +7,15 @@
 @tailwind utilities;
 
 
+.sparkboxes .box {
+  padding: 3px 0 0 0;
+  position: relative;
+}
+
+#spark1, #spark2, #spark3, #spark4 {
+  position: relative;
+  padding-top: 15px;
+}
 
 
 

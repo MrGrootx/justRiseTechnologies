@@ -1,4 +1,4 @@
-import 'dart:ffi';
+import 'package:flutter/material.dart';
 
 String name = 'test_learn.dart awdw';
 
@@ -49,6 +49,10 @@ pintMyNameYouDummy(String name) {
 String getMyName(String firstName, String lastName) {
   final name = '$firstName $lastName';
   return name;
+}
+
+Widget getNewWidget(name) {
+  return Text(name);
 }
 
 // How to define a class

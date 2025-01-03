@@ -44,17 +44,28 @@ class MainApp extends StatelessWidget {
             ),
           ],
         ),
-
-        bottomNavigationBar: BottomAppBar(
-          child: Container(
-            color: Colors.brown,
-            child: Center(
-              child: Text(
-                'Study Materials provided by JustRise Technologies',
-                style: TextStyle(color: Colors.white, fontSize: 18.0),
-              ),
-            ),
-          ),
+        // bottomNavigationBar: BottomAppBar(
+        //   child: Container(
+        //     color: Colors.brown,
+        //     child: Center(
+        //       child: Text(
+        //         'Study Materials provided by JustRise Technologies',
+        //         style: TextStyle(color: Colors.white, fontSize: 18.0),
+        //       ),
+        //     ),
+        //   ),
+        // ),
+        bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          onTap: (int index) {
+            print('Current Index: $index');
+          },
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+            BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
+          ],
         ),
         appBar: AppBar(
           title: Text('Task 01'),

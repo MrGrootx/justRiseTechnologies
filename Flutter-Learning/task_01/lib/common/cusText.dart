@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 Widget CusText({
   required String text,
   required Color bgColor,
-  double fontSize = 16,
+  double? fontSize = 16.0,
 }) {
   return Padding(
     padding: const EdgeInsets.symmetric(vertical: 10.0), 
